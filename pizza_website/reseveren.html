@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loui's pizza</title>
+    <link rel="icon" href="img/pizza_logo.jpg" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="greeting"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="werkenbij.html">Werken bij</a></li>
+                    <li><a href="bestellen.html">Bestellen</a></li>
+                    <li><a href="reseveren.html">Reseveren</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+        <main>
+            <h2>Reservation Page</h2>
+            <form id="reservationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br><br>
+
+                <label for="quantity">Number of People:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+                <button type="button" onclick="submitReservation()">Submit Reservation</button>
+            </form>
+
+            <div id="confirmationMessage"></div>
+<script>
+                function submitReservation() {
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var date = document.getElementById('date').value;
+                    var time = document.getElementById('time').value;
+                    var people = document.getElementById('people').value;
+
+
+                    var confirmationMessage = document.getElementById('confirmationMessage');
+                    confirmationMessage.innerHTML = 
+                        <p>Reservation Confirmed!</p>
+                        <p><strong>Name:</strong> ${name}</p>
+                        <p><strong>Email:</strong> ${email}</p>
+                        <p><strong>Date:</strong> ${date}</p>
+                        <p><strong>Time:</strong> ${time}</p>
+                        <p><strong>Number of People:</strong> ${people}</p>
+                    ;
+
+                    document.getElementById('reservationForm').reset();
+                }
+            </script>
+        </main>
+        <div class="wrapper">
+        <footer>
+            <p>&copy; 2023 Loui's pizza. Alle rechten voorbehouden.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

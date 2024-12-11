@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loui's pizza</title>
+    <link rel="icon" href="img/pizza_logo.jpg" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="greeting"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="werkenbij.html">Werken bij</a></li>
+                    <li><a href="bestellen.html">Bestellen</a></li>
+                    <li><a href="reseveren.html">Reseveren</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+    </div>
+        <main>
+            <div class="pizza">
+                <img src="img/pizza_funghi.png" alt="pizza funghi" width="300px">
+                <img src="img/pizza_kip.png" alt="pizza kip" width="300px">
+            </div>
+            <img src="img/pizza_logo.jpg" alt="pizza logo" width="433px">
+            <div class="pizza-description">
+                <p>Loui's Pizza, opgericht in 1985 door de gepassioneerde pizzabakker Loui Martelli, begon als een bescheiden eettent in het hart van Little Italy. Loui, met zijn Italiaanse roots en geheime familierecept, wist al snel de harten van de lokale gemeenschap te veroveren. Zijn toewijding aan verse ingrediënten en authentieke smaken maakte Loui's Pizza een geliefde plek voor buurtbewoners en toeristen alike. Het kleine etablissement groeide uit tot een iconische pizzeria, waar de geur van versgebakken deeg en de vrolijke klanken van gezelligheid samenkomen. De legende van Loui's Pizza blijft gedijen, en de smaakvolle traditie wordt nu voortgezet door Loui's toegewijde kleinzoon, Tony, die de nalatenschap van zijn grootvader met trots voortzet.</p>
+            </div>
+        </main>
+    <div class="wrapper">
+        <footer>
+            <p>&copy; 2023 Loui's pizza. Alle rechten voorbehouden.</p>
+        </footer>
+    </div>
+    <script>
+        let name = prompt("welcome, what is your name?", "type your name here!");
+            document.getElementById("greeting").innerText = "Welcome to Loui's pizza, "+ name;
+    </script>
+</body>
+</html>

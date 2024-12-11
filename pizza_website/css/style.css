@@ -1,0 +1,115 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+@font-face {
+    font-family: Knewave;
+    src: url(Knewave-Regular.ttf);
+}
+
+body {
+    margin: 20px;
+    background-color: #e7e4dd;
+}
+
+header{
+    text-align: center;
+    background-color: #c83e3e;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    margin: 0; 
+}
+
+footer {
+    text-align: center;
+    background-color: #c83e3e;
+    text-align: center;
+    padding: 25px;
+    margin-top: 80px;
+}
+
+h1{
+    font-family: Knewave;
+    color: #014b0e;
+}
+
+h2{
+    font-family: Signika;
+    color: #c83e3e;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-family: Signika;
+    color: #014b0e;
+}
+
+.pizza {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.pizza img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family: Signika;
+    color: #014b0e;
+}
+
+a:hover {
+    background-color: #c83e3e;
+  }
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li:nth-last-child(2),
+nav ul li:last-child {
+    border: 2px solid #014b0e; 
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.vacaturesbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vacatures{
+    margin: 5px;
+}
+
+p{
+    font-family: Signika;
+    color: #014b0e;
+    margin: 10px;
+}
+
+ul{
+    font-family: Signika;
+    color: #014b0e;
+}
+
+form{
+    margin: 20px;
+    padding: 10px;
+}
